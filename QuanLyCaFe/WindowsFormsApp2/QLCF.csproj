@@ -64,6 +64,12 @@
     <Compile Include="frmDoiMatKhau.Designer.cs">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLoaiDoUong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThanhToan.Designer.cs">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
     </Compile>
     <Compile Include="KetNoiSQL.cs" />
     <Compile Include="ManHinhChinh.cs">
@@ -103,11 +115,17 @@
     <EmbeddedResource Include="frmDoUong.resx">
       <DependentUpon>frmDoUong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLoaiDoUong.resx">
       <DependentUpon>frmLoaiDoUong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThanhToan.resx">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManHinhChinh.resx">
       <DependentUpon>ManHinhChinh.cs</DependentUpon>
@@ -118,6 +136,17 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include=".editorconfig" />
+    <None Include="Properties\DataSources\formDangNhap.frmDangNhap.datasource" />
+    <None Include="Properties\DataSources\frmBan.datasource" />
+    <None Include="Properties\DataSources\frmDoiMatKhau.datasource" />
+    <None Include="Properties\DataSources\frmDoUong.datasource" />
+    <None Include="Properties\DataSources\frmLoaiDoUong.datasource" />
+    <None Include="Properties\DataSources\frmNhanVien.datasource" />
+    <None Include="Properties\DataSources\frm_ManHinhChinh.datasource" />
+    <None Include="Properties\DataSources\ketnoisql.KetNoiSQL.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp2.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApp2.Properties.Settings.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

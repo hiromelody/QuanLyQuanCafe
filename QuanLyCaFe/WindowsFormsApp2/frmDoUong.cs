@@ -34,22 +34,24 @@ namespace WindowsFormsApp2
             dgvMain.EnableHeadersVisualStyles = false;
             dgvMain.ColumnHeadersDefaultCellStyle.BackColor = Color.DarkSlateGray;
             dgvMain.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            dgvMain.Columns["MaDU"].FillWeight = 125;
-            dgvMain.Columns["TenDU"].FillWeight = 200;
-            dgvMain.Columns["MaLoai"].FillWeight = 125;
-            dgvMain.Columns["DonGia"].FillWeight = 150;
+            dgvMain.Columns[0].FillWeight = 50;
+            dgvMain.Columns[1].FillWeight = 100;
+            dgvMain.Columns[2].FillWeight = 55;
+            dgvMain.Columns[3].FillWeight = 70;
+            dgvMain.Columns[3].DefaultCellStyle.Format = "N0"; // format tiền
+
         }
 
         private void LoadData()
         {
-            string strSQL = $@"SELECT * FROM DoUong WHERE MaDU LIKE N'%{txtbTimkiem.Text}%'";
+            string strSQL = $@"SELECT * FROM DoUong WHERE TenDU LIKE N'%{txtbTimkiem.Text}%'";
             dgv_DanhMucDoUong.DataSource = KetNoiSQL.ThucThiQuery(strSQL);
 
 
             SetupDataGridView(dgv_DanhMucDoUong);
             dgv_DanhMucDoUong.Columns[0].HeaderText = "Mã Đồ Uống";
             dgv_DanhMucDoUong.Columns[1].HeaderText = "Tên Đồ Uống";
-            dgv_DanhMucDoUong.Columns[2].HeaderText = "Mã Loại";
+            dgv_DanhMucDoUong.Columns[2].HeaderText = "Mã Loại Đồ Uống";
             dgv_DanhMucDoUong.Columns[3].HeaderText = "Đơn Giá";
             dgv_DanhMucDoUong.Columns["HinhAnh"].Visible = false;
 
@@ -309,6 +311,11 @@ namespace WindowsFormsApp2
 
                 LoadData();
             }
+        }
+
+        private void dgv_DanhMucDoUong_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

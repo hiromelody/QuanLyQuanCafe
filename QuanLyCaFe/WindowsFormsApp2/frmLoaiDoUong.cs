@@ -169,5 +169,15 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void btn_TimKiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_TimKiem_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

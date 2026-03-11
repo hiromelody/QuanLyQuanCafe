@@ -39,7 +39,6 @@ namespace WindowsFormsApp2
             dgvMain.Columns["MatKhau"].FillWeight = 110;
             dgvMain.Columns["SDT"].FillWeight = 140;
             dgvMain.Columns["DiaChi"].FillWeight = 210;
-           
         }
 
         private void LoadData()

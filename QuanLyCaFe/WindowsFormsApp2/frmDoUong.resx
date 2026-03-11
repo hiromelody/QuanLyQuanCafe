@@ -117,10 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_TimKiem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANgSURBVEhLrVRL
+        TxNhFJ1fge50YdSFbS0FHytCghrBR1xo3JnIQk3EBf4B4gtKlcQgJC7UjYlBTYyo0RB1YYyIOFNoB7FQ
+        eYjEQqG0pe2UKe0x58PWmSk0JnCSm7bp951z77n3fhJWwcCvBK6+mcSpB8Oobveh5o4PZx4GcOfDNOYS
+        uvV4SUjGH5GkjkOdfuxqluHyKHC1WsKjYMe1fjQ8DRqvlURBwDedwPar/djfNgBHs4zzT4J4oITxajSG
+        54Eo2j+FcOLeNzjdMipverGvbcDMtAaEADPPkx/s9KMvpGEsmYW6oGMwsgRfhJ86JrQcutSIqIYCVbcH
+        rXxFEAK0ZX+bFwc6/YLYH9GhhNMYmFsqHMzmchiL6/Av6Pg4nRKVlLcq8LybMvIVQWJD6Tlt+RzSBLl3
+        bqlIII9ZbRlDsQw6emdQ6VGw8/pX6xETJE4Lm3fucVBkT/J8yOE0vobTUCNLiOvZwqVAVMd4Kiuq3u1W
+        8EKdN5EaIZ28/014el8OYyi6kr0xWAmFPoU0pDIrIot6FsPxDC49G4OzVUHT60krbwFSdfugEHgVjBXs
+        WS1YyUQ88/daTvTixvtfcLoVXOgatdD+g1TT4RMC3SNRcclKbKzEN7/SE9qlRjO48nZKCFwssRcSN5QC
+        nPPhWKaI2Bi0qm82jf7ZNH4kl3H20aiwqNQkSVx/NplL9DOdKyK1Rn66mAxH1d4io3c8ZuUtQOLbwvXn
+        YS7R93jpKhiTWhaN3ePYe8uLCo/XymmCWDS+LVx/WvVxOomRxeUiUgYzJ/ndL7NwtMhwtfnRM7J29kTh
+        LeIzwWAlHb0hQTS6uIzvsYyoip7z++XucexukVF9Nwhbw0MgsWBmtMD0mvJt4fpzQynGOecoclpEQ92y
+        sIWZk3xr2U6UldmRSmlGGhNMAgQnguvPDeWEcAxFtCqiofS8JxATmZN8y5Y9sNkOwWY7jKqq05ia+m3i
+        KxLI46U6j6bXE2KJOOcUtk6LpmmC3Ok8KsJur8XmzXuhqiOFM2sK/C+YOckrKo6LKC8/ik2b9sDvD4j/
+        1y1AW5h5XiAvwkpCofD6Beg5yUhqFHE4alFXV79+AYKe0xajiMt1TIhsiAChqgFRCUlJvm1bNRobr2+c
+        ADEzM4cjR+rhcNQJcuIPeOnOXMxeAhUAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MenuThem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
