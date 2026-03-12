@@ -13,7 +13,7 @@ namespace ketnoisql
     {
         private static SqlConnection GetSqlConnection()
         {
-            return new SqlConnection(@"Data Source = .; Initial Catalog=QuanLyQuanCafe; Integrated Security=True");
+            return new SqlConnection(@"Data Source = localhost; Initial Catalog=QuanLyQuanCafe; Integrated Security=True");
 
         }
 

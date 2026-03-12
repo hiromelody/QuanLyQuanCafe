@@ -1,18 +1,3 @@
--- Drop nếu đã có (an toàn)
-IF DB_ID('QuanLyQuanCafe') IS NOT NULL
-BEGIN
-    USE master;
-    
-    ALTER DATABASE QuanLyQuanCafe
-    SET SINGLE_USER
-    WITH ROLLBACK IMMEDIATE;
-    
-    DROP DATABASE QuanLyQuanCafe;
-
-    DROP DATABASE [QuanLyQuanCafe];
-END
-GO
-
 -- Tạo database mới (để SQL chọn đường dẫn mặc định --> C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA)
 USE [master]
 CREATE DATABASE QuanLyQuanCafe;
@@ -31,7 +16,7 @@ GO
 CREATE TABLE dbo.Ban (
     MaBan varchar(10) NOT NULL PRIMARY KEY,
     SucChua int NOT NULL CONSTRAINT CK_Ban_SucChua CHECK (SucChua > 0),
-    TrangThai nvarchar(50) NOT NULL
+    TrangThai int NOT NULL
 );
 GO
 
@@ -71,18 +56,18 @@ CREATE TABLE dbo.DoUong (
 GO
 
 CREATE TABLE dbo.HoaDon (
-    MaHD varchar(10) NOT NULL PRIMARY KEY,
+    MaHD int identity(1,1) NOT NULL PRIMARY KEY,
     NgayLap datetime NOT NULL DEFAULT GETDATE(),
     MaNV varchar(10) NULL,
     MaKH varchar(10) NULL,
     MaBan varchar(10) NULL,
     TongTien decimal(18,2) NOT NULL DEFAULT 0,
-    TrangThai nvarchar(50) NOT NULL
+    TrangThai int NOT NULL
 );
 GO
 
 CREATE TABLE dbo.ChiTietHoaDon (
-    MaHD varchar(10) NOT NULL,
+    MaHD int  NOT NULL,
     MaDU varchar(10) NOT NULL,
     SoLuong int NOT NULL CONSTRAINT CK_CTHD_SoLuong CHECK (SoLuong > 0),
     DonGia decimal(18,2) NOT NULL,
@@ -96,16 +81,16 @@ GO
 -- ======================================================
 
 INSERT INTO dbo.Ban (MaBan, SucChua, TrangThai) VALUES
-('B01', 2, '0'),
-('B02', 2, '0'),
-('B03', 4, '0'),
-('B04', 4, '0'),
-('B05', 6, '0'),
-('B06', 6, '0'),
-('B07', 4, '0'),
-('B08', 4, '0'),
-('B09', 3, '1'),
-('B10', 3, '1');
+('B01', 2, 0),
+('B02', 2, 0),
+('B03', 4, 0),
+('B04', 4, 0),
+('B05', 6, 0),
+('B06', 6, 0),
+('B07', 4, 0),
+('B08', 4, 0),
+('B09', 3, 0),
+('B10', 3, 0);
 GO
 
 INSERT INTO dbo.KhachHang (MaKH, TenKH, SDT, DiaChi) VALUES
@@ -142,14 +127,14 @@ INSERT INTO dbo.DoUong (MaDU, TenDU, MaLoai, DonGia, HinhAnh) VALUES
 ('DU11', N'Chocolate đá xay', 'L05',52000, N'choco.jpg');
 GO
 
--- Chèn HoaDon (bao gồm HD01 để khớp ChiTiet)
-INSERT INTO dbo.HoaDon (MaHD, NgayLap, MaNV, MaKH, MaBan, TongTien, TrangThai) VALUES
-('HD01', GETDATE(), 'NV01', 'KH01', 'B01', 50000, N'Chưa thanh toán'),
-('HD02', GETDATE(), 'NV01', 'KH02', 'B02', 85000, N'Chưa thanh toán'),
-('HD03', GETDATE(), 'NV02', 'KH03', 'B03', 120000, N'Đã thanh toán'),
-('HD04', GETDATE(), 'NV01', 'KH01', 'B04', 45000, N'Chưa thanh toán'),
-('HD05', GETDATE(), 'NV03', 'KH02', 'B05', 99000, N'Đã thanh toán'),
-('HD06', GETDATE(), 'NV02', 'KH03', 'B06', 76000, N'Chưa thanh toán');
+--Chèn HoaDon
+INSERT INTO dbo.HoaDon (NgayLap, MaNV, MaKH, MaBan, TrangThai) VALUES
+(GETDATE(), 'NV01', 'KH01', 'B01', 0),
+(GETDATE(), 'NV01', 'KH02', 'B02', 0),
+(GETDATE(), 'NV02', 'KH03', 'B03', 0),
+(GETDATE(), 'NV01', 'KH01', 'B04', 0),
+(GETDATE(), 'NV03', 'KH02', 'B05', 0),
+(GETDATE(), 'NV02', 'KH03', 'B06', 0);
 GO
 
 -- Chèn Chi Tiết

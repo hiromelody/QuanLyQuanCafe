@@ -85,3 +85,24 @@ D:\0468231155\doan\QuanLyCaFe cua taooooooooooo\WindowsFormsApp2\obj\Debug\QLCF.
 D:\0468231155\doan\QuanLyCaFe cua taooooooooooo\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 D:\0468231155\doan\QuanLyCaFe cua taooooooooooo\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 D:\0468231155\doan\QuanLyCaFe cua taooooooooooo\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmThanhToan.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\QLCF.csproj.AssemblyReference.cache
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe.config
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmBan.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\formDangNhap.frmDangNhap.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmDoiMatKhau.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmDoUong.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmKhachHang.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmLoaiDoUong.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmNhanVien.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmThanhToan.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frm_ManHinhChinh.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\QLCF.csproj.GenerateResource.cache
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\QLCF.csproj.CoreCompileInputs.cache
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+D:\0468231155\doan\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+D:\LTWINDOWS\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmKhachHang.resources
+D:\LTWINDOWS\QuanLyCaFe (1)\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmThanhToan.resources

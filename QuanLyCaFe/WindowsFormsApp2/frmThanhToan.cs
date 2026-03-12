@@ -13,10 +13,15 @@ namespace WindowsFormsApp2
 {
     public partial class frmThanhToan : Form
     {
-        public frmThanhToan()
+        int MaHD;
+
+        public frmThanhToan(int maHD)
         {
             InitializeComponent();
+            MaHD = maHD;
         }
+
+
         public static void SetupDataGridView(DataGridView dgvMain)
         {
             dgvMain.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 10, FontStyle.Bold);
@@ -105,7 +110,17 @@ namespace WindowsFormsApp2
 
         private void frmThanhToan_Load(object sender, EventArgs e)
         {
-            //LoadData();
+            string sql = $@"SELECT SUM(ThanhTien) AS TongTien
+                    FROM ChiTietHoaDon
+                    WHERE MaHD = {MaHD}";
+
+            DataTable dt = KetNoiSQL.ThucThiQuery(sql);
+
+            if (dt.Rows.Count > 0 && dt.Rows[0]["TongTien"] != DBNull.Value)
+            {
+                decimal tong = Convert.ToDecimal(dt.Rows[0]["TongTien"]);
+                lb_TongTien.Text = tong.ToString("N0") + " VNĐ";
+            }
         }
     }
 }

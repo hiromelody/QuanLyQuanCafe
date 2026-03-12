@@ -39,6 +39,8 @@
             this.lbl_SoDienThoai = new System.Windows.Forms.Label();
             this.lbl_MaNhanVien = new System.Windows.Forms.Label();
             this.lbl_DiaChi = new System.Windows.Forms.Label();
+            this.lb_TongTien = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ThanhToan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,12 +157,37 @@
             this.lbl_DiaChi.Text = "Địa chỉ:";
             this.lbl_DiaChi.Click += new System.EventHandler(this.lbl_DiaChi_Click);
             // 
+            // lb_TongTien
+            // 
+            this.lb_TongTien.AutoSize = true;
+            this.lb_TongTien.BackColor = System.Drawing.Color.NavajoWhite;
+            this.lb_TongTien.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_TongTien.ForeColor = System.Drawing.Color.Red;
+            this.lb_TongTien.Location = new System.Drawing.Point(435, 480);
+            this.lb_TongTien.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_TongTien.Name = "lb_TongTien";
+            this.lb_TongTien.Size = new System.Drawing.Size(76, 25);
+            this.lb_TongTien.TabIndex = 142;
+            this.lb_TongTien.Text = "0 VNĐ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(340, 480);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 25);
+            this.label1.TabIndex = 143;
+            this.label1.Text = "TỔNG: ";
+            // 
             // frmThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(795, 557);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_TongTien);
             this.Controls.Add(this.btn_ThanhToan);
             this.Controls.Add(this.btn_ThemMoi);
             this.Controls.Add(this.btn_TimKiem);
@@ -193,5 +220,7 @@
         private System.Windows.Forms.Label lbl_SoDienThoai;
         private System.Windows.Forms.Label lbl_MaNhanVien;
         private System.Windows.Forms.Label lbl_DiaChi;
+        private System.Windows.Forms.Label lb_TongTien;
+        private System.Windows.Forms.Label label1;
     }
 }
